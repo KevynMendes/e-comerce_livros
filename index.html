@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Livros para você</title>
+    <link rel="icon" href="imagens/assets/books.png" type="image/x-png">
+    <link rel="shortcut icon" href="imagens/assets/books.png" type="image/png">
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./footer.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-2oIosqM+xTCqQGhGTEd2smJ5LWxLdTqiRh2Yuc8YqzvNAp2xM0nR4eFJiJ/PWZf4" crossorigin="anonymous">
+  
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li>
+          <div id="selo-bestseller">
+            <img src="./imagens/assets/books.png" alt="#">
+        </li>
+        <li><strong>Livros > |</strong></li>
+        <li>A Arte da Guerra <strong>|</strong></li>
+        <li>A Sutil Arte de Ligar o Foda-se <strong>|</strong></li>
+        <li>10X A Regra do Sucesso <strong>|</strong></li>
+        <li>48 Leis do Poder <strong>|</strong></li>
+        <li>+ Esperto que o Diabo <strong>|</strong></li>
+        <li>
+          <div id="selo-bestseller">
+            <img src="imagens/assets/carrinho.png" alt="#">
+        </li>
+     </ul>
+  </nav>
+    <main>
+      <section id="produto">
+        <div id="opcoes-produtos">
+          <h1 id="titulo-produto">10X, a Regra Que Faz a Diferença Entre o Sucesso X Fracasso</h1>
+          <h2 id="autor-produto">Autor - Grant Cardone</h2>
+              <div class="precos">
+                 <p id="preco">R$ 14,90</p>
+                    <span id="parcelas" class="link">
+                      <p>&#9432</p>
+                        <p>Em até 3x de R$ 5,99</p>
+                          </span>
+                          <p id="a-vista">R$ 9,99 no PIX (4,90R$ de desconto)</p>
+         </div>
+          <div id="opcoes">
+            <ul id="opcao-livro">
+              <li><input type="radio" name="opcao-livro" id="0-livro" onclick="atualizarLivroSelecionado()" checked><label for="0-livro"><img src="./imagens/Livros/10X/imagem-1.jpg" alt="" srcset=""></label></li>
+              <li><input type="radio" name="opcao-livro" id="1-livro" onclick="atualizarLivroSelecionado()"><label for="1-livro"><img src="./imagens/Livros/48-leis-do-poder/imagem-1.jpg" alt="" srcset=""></label></li>
+              <li><input type="radio" name="opcao-livro" id="2-livro" onclick="atualizarLivroSelecionado()"><label for="2-livro"><img src="./imagens/Livros/a-arte-da-guerra/imagem-1.jpg" alt="" srcset=""></label></li>
+              <li><input type="radio" name="opcao-livro" id="3-livro" onclick="atualizarLivroSelecionado()"><label for="3-livro"><img src="./imagens/Livros/mais-esperto-do-que/imagem-1.jpg" alt="" srcset=""></label></li>
+              <li><input type="radio" name="opcao-livro" id="4-livro" onclick="atualizarLivroSelecionado()"><label for="4-livro"><img src="./imagens/Livros/a-sutil-arte/imagem-1.jpg" alt="" srcset=""></label></li>
+            </ul>
+               <div id="selo-bestseller">
+                <img src="./imagens/assets/bestseller.png" alt="">
+                  <p> Best-Seller</p>
+              </div>
+          <div id="tipo-produto">
+            <h2>Formato:</h2>
+              <div id="opcoes-produto">
+                <input type="radio" name="opcao-produto" id="0-audiobook" onclick="atualizarTipo()">
+                <label for="0-audiobook">Áudio-Book</label>
+                <input type="radio" name="opcao-produto" id="1-ebook" onclick="atualizarTipo()" checked>
+                <label for="1-ebook">E-Book</label>
+              </div>
+            <div id='disclaimer'>
+              <p>Produto 100% Digital.</p>
+                <p id="saiba-mais" class="link">Saiba mais sobre os formatos <b>&#8250;</b></p>
+                  <div id="informacoes-adicionais" style="display: none;">
+                      <ul>
+                        <li>MP3</li>
+                        <li>MP4</li>
+                        <li>MOBI</li>
+                        <li>PDF</li>
+                    </ul>
+                  </div>
+                </p>
+            </div>
+          </div>
+     <div id="download">
+        <img src="./imagens/assets/download.png" alt="">
+            <p></p>
+              <div id="informacoes-download">
+                <span>Download Imediato.</span>
+                <p id="disponibilidade">Receba em seu E-mail.</p>
+        </div>
+        </div>
+            <div id="comprar">
+              <button id="adicionar-a-sacola">Comprar</button>
+                <div id="comprar-combo">
+                  <span>OFERTA RELAMPAGO!!!</span>
+                    <p> 5 Livros por apenas 39,90R$</p>
+                      <p id="timer">Tempo Restante: 15:00</p>
+                </div>
+              </div>
+             </div>
+            </div>
+        <div id="visualizacao">
+          <img src="./imagens/Livros/10X/imagem-1.jpg" alt="" id="imagem-visualizacao">
+          <ul id="selecionar-imagem">
+            <li><input type="radio" name="opcao-imagem" id="0-imagem" onclick="atualizarImagemSelecionada()"><label for="0-imagem"><img src="./imagens/Livros/10X/imagem-0.jpg" alt="" srcset="" id="0-imagem-miniatura"></label></li>
+            <li><input type="radio" name="opcao-imagem" id="1-imagem" onclick="atualizarImagemSelecionada()" checked><label for="1-imagem"><img src="./imagens/Livros/10X/imagem-1.jpg" alt="" srcset="" id="1-imagem-miniatura"></label></li>
+            <li><input type="radio" name="opcao-imagem" id="2-imagem" onclick="atualizarImagemSelecionada()"><label for="2-imagem"><img src="./imagens/Livros/10X/imagem-2.jpg" alt="" srcset="" id="2-imagem-miniatura"></label></li>
+          </ul>
+          <br>
+          <div id="infoLivro"><h1>Por definição, o sucesso extraordinário é aquele que resulta de ações que vão além da média, do que tudo mundo faz. Se você quer atingi-lo, não pode seguir o mesmo caminho que as outras pessoas e se acostumar com a mediocridade. Precisa eliminar o fator "sorte" da sua equação. 10X pode lhe ensinar a fazer isso! O sucesso é seu direito, dever e responsabilidade, e este livro oferece o passo-a-passo para chegar até ele!<br><br>
+            Com o 10X, você vai descobrir qual o nível de esforço necessário para obter o sucesso que deseja e como manter essa energia ao longo de sua vida. A maioria das pessoas quer ser bem-sucedida e até tem ótimas ideias, mas não age de acordo para alcançar os seus sonhos extraordinários.<br> <br>       
+            Ao ler este livro, você vai acabar com seus medos, fortalecer sua fé em si mesmo, parar de procrastinar e estabelecer o seu objetivo de vida. Como resultado, ele também fará com que você se destaque no mercado de trabalho – e isso acontecerá porque você saberá fazer o que os outros se recusam. Pare de pensar pequeno e comece a almejar o que há de melhor e mais extraordinário para todas as áreas da sua vida.<br> <br> 
+            O livro 10X ensina a linha de pensamento das pessoas de sucesso: almeje dez vezes mais do que você tem agora. <br> <br >Você aprenderá a:<br> <br>
+            
+            • Alcançar objetivos antes considerados impossíveis <br>
+            • Estabelecer metas corretamente e atingi-las com confiança <br>
+            • Criar níveis inigualáveis de felicidade e satisfação em todas as áreas da sua vida <br>
+            • Usar o medo como combustível para se mexer, e nunca se acomodar <br>
+            • Vencer a concorrência e se tornar um modelo de sucesso<br>
+            </h1></div>
+        </div>
+   
+    <button id="botao-duvidas" onclick="abrirModal()">Dúvidas Frequentes</button>
+    
+    <div id="modal-duvidas">
+        <div id="conteudo-modal">
+            <span id="fechar-modal" onclick="fecharModal()">&times;</span>
+            <h2><strong>Dúvidas Frequentes</strong></h2> <br>
+            <p><strong>Aqui estão algumas dúvidas frequentes:</strong></p> <br>
+            <p>Posso ouvir off-line ? | <strong>>Sim, você pode ouvir off-line.</strong></p>
+            <p>Posso ler off-line ? | <strong>Sim, você pode ler off-line.</strong></p>
+            <p>É em Português ? | <strong>Sim, Todos os conteúdos dos livros são em Português-BR.</strong></p>
+            <p>Por quanto tempo vou ter acesso ? | <strong>Para sempre.</strong></p>
+
+        </div>
+    </div>
+    
+      
+    </main>
+    <footer>
+      <figure class="profile">
+      
+        <div class="autor">
+          <img src="./imagens/assets/profile-1.png" title="Loop Nerd" alt="Profile"/>
+          <h1>Diego Alves</h1><span>Advogado</span>
+        </div>
+      
+        <blockquote>
+          "Recebi muito rápido os livros que comprei e como posso baixar e ler off-line me ajuda bastante enquanto estou em lugares sem conexão com a internet."
+        </blockquote>
+
+        <div class="autor">
+          <img src="./imagens/assets/profile-2.png" title="Loop Nerd" alt="Profile"/>
+          <h1>Marcos Oliveira</h1><span>Atleta</span>
+        </div>
+      
+        <blockquote>
+          "Aprendi demais, e o que ajudava bastante é que eu fazia o download e enquanto eu estava fazendo meus treinos também escutava os livros."
+        </blockquote>
+
+        <div class="autor">
+          <img src="./imagens/assets/profile-3.png" title="Loop Nerd" alt="Profile"/>
+          <h1>Matheus Santos</h1><span>Empresário</span>
+        </div>
+      
+        <blockquote>
+          "Começar a ler mudou a minha vida, coloco em pratica cada ensinamento que leio e cada vez mais tenho uma visão de mundo diferente"
+        </blockquote>
+       </figure>
+    </footer>
+    
+    <script src="./script.js" defer></script>
+  </body>
+</html>
