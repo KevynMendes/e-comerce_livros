@@ -6,7 +6,7 @@ const opcaoImagem1 = document.getElementById('1-imagem-miniatura');
 const opcaoImagem2 = document.getElementById('2-imagem-miniatura');
 
 const dezX = {
-  nome: '10X, a Regra Que Faz a Diferença Entre o Sucesso X Fracasso',
+  nome: '10X, Diferença Entre o Sucesso X Fracasso',
   autor: "Grant Cardone",
   nomePastaImagens: '10X',
   resumo: "Por definição, o sucesso extraordinário é aquele que resulta de ações que vão além da média, do que tudo mundo faz. Se você quer atingi-lo, não pode seguir o mesmo caminho que as outras pessoas e se acostumar com a mediocridade. Precisa eliminar o fator 'sorte' da sua equação. 10X pode lhe ensinar a fazer isso! O sucesso é seu direito, dever e responsabilidade, e este livro oferece o passo-a-passo para chegar até ele!\n\nCom o 10X, você vai descobrir qual o nível de esforço necessário para obter o sucesso que deseja e como manter essa energia ao longo de sua vida. A maioria das pessoas quer ser bem-sucedida e até tem ótimas ideias, mas não age de acordo para alcançar os seus sonhos extraordinários.\n\nAo ler este livro, você vai acabar com seus medos, fortalecer sua fé em si mesmo, parar de procrastinar e estabelecer o seu objetivo de vida. Como resultado, ele também fará com que você se destaque no mercado de trabalho – e isso acontecerá porque você saberá fazer o que os outros se recusam. Pare de pensar pequeno e comece a almejar o que há de melhor e mais extraordinário – para todas as áreas da sua vida.\n\nO livro 10X ensina a linha de pensamento das pessoas de sucesso: almeje dez vezes mais do que você tem agora – e, se você não alcançar, ainda assim estará na frente do que se tivesse mantido seu status quo. Você aprenderá a:\n\n• Alcançar objetivos antes considerados impossíveis\n• Estabelecer metas corretamente e atingi-las com confiança\n• Criar níveis inigualáveis de felicidade e satisfação em todas as áreas da sua vida\n• Usar o medo como combustível para se mexer, e nunca se acomodar\n• Vencer a concorrência e se tornar um modelo de sucesso"
@@ -91,30 +91,25 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 });
 
-    var timeLeft = 900;
+var timeLeft = 300; // 5 minutos em segundos
 
-    var countdown = setInterval(function() {
+var countdown = setInterval(function() {
   
-        var minutes = Math.floor(timeLeft / 60);
-        var seconds = timeLeft % 60;
+    var minutes = Math.floor(timeLeft / 60);
+    var seconds = timeLeft % 60;
 
-        seconds = seconds < 10 ? "0" + seconds : seconds;
+    seconds = seconds < 10 ? "0" + seconds : seconds;
 
-        document.getElementById("timer").innerHTML = "Tempo restante: " + minutes + ":" + seconds;
+    document.getElementById("timer").innerHTML = "Tempo restante: " + minutes + ":" + seconds;
 
-        // Verifica se o tempo acabou
-        if (timeLeft === 0) {
-            // Se o tempo acabou, limpa o intervalo e executa qualquer ação adicional necessária
-            clearInterval(countdown);
-            alert("Tempo esgotado!");
-            // Você pode adicionar ações adicionais aqui, como esconder a oferta ou redirecionar o usuário.
-        } else {
-            // Decrementa o tempo restante
-            timeLeft--;
-        }
-    }, 1000); // Executa a cada 1 segundo (1000 milissegundos)
+    if (timeLeft === 0) {
+        clearInterval(countdown);
+        alert("Tempo esgotado!");
+    } else {
+        timeLeft--;
+    }
+}, 1000); 
 
-  
     function abrirModal() {
       document.getElementById("modal-duvidas").style.display = "block";
   }
@@ -123,4 +118,18 @@ document.addEventListener("DOMContentLoaded", function() {
       document.getElementById("modal-duvidas").style.display = "none";
   }
 
+ function armazenarDadosSelecionados() {
+ 
+  var tituloProduto = document.getElementById("titulo-produto").textContent;
+  var autorProduto = document.getElementById("autor-produto").textContent;
+  var precoProduto = document.getElementById("preco").textContent;
 
+  localStorage.setItem("tituloProduto", tituloProduto);
+  localStorage.setItem("autorProduto", autorProduto);
+  localStorage.setItem("precoProduto", precoProduto);
+}
+
+document.getElementById("irParaPagamento").addEventListener("click", function() {
+  armazenarDadosSelecionados();
+  window.location.href = "checkout.html"; 
+});

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Finalizar Pedido</title>
+    <link rel="stylesheet" href="./checkout-styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="icon" href="imagens/assets/carrinho.png" type="image/x-png">
+    <link rel="shortcut icon" href="imagens/assets/carrinho.png" type="image/png">
+</head>
+<body>
+
+    <button id="return" onclick="window.history.back()"><i class="bi bi-arrow-left-short">Voltar</i></button>
+   
+    <h1 id="resumo">Resumo da Compra:</h1>
+    <ul>
+        <li>
+            <h2 id="titulo-produto"></h2>
+            <h2 id="autor-produto"></h2>
+            <h2 id="preco-produto"></h2>
+        </li>
+    </ul>
+    <img id="carrinho" src="./imagens/assets/carrinho.png" alt="Carrinho de Compras">
+
+    
+    <form id="form-finalizar-compra">
+      <h2>Informações do Comprador:</h2>
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required> 
+
+        <label for="telefone">Telefone:</label>
+        <input type="tel" id="telefone" name="telefone" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+    </form>
+
+    <form id="payment-form">
+      <h1>Checkout:</h1>
+  
+      <div id="payment-method">
+        
+        
+        <label for="card">
+            <img src="./imagens/assets/cartao.png" alt="Ícone Cartão" style="width: 1rem; height: 1rem;">  Cartão
+          </label>
+        <input type="radio" id="card" name="payment-method" value="card" required>
+        
+        <label for="pix">
+            <img id="pixLogo" src="./imagens/assets/pixlogo.png" alt="Ícone PIX" style="width: 1rem; height: 1rem;">  PIX
+          </label>
+        <input type="radio" id="pix" name="payment-method" value="pix" required>
+    </div>
+    
+    <div id="card-details" style="display: none;">
+        <label for="card-number">Número do Cartão:</label>
+        <input type="text" id="card-number" name="card-number" required>
+    
+        <label for="expiry">Data de Expiração:</label>
+        <input type="text" id="expiry" name="expiry" placeholder="MM/YY" required>
+    
+        <label for="cvv">CVV:</label>
+        <input type="text" id="cvv" name="cvv" required>
+    </div>
+    
+    <div id="pix-details" style="display: none;">
+        <label for="pix-key">Chave PIX:</label>
+        <br>
+        <a id="pix-qr-link" href="#">
+            <img id="pix-qr-code" src="./imagens/assets/pix.png" alt="QR Code PIX">
+        </a>
+            <input type="text" value="7b2b0f57-c269-49e0-addd-307ba27f5769" id="myInput">
+            <button id="copiar" class="btn btn-primary" onclick="copyToClipboard()">
+                <i class="bi bi-clipboard"></i> Copiar
+              </button>
+    </div>
+    
+
+        <button id="finalizar" type="submit">Finalizar Compra</button>
+    </form>
+    
+    <script src="./checkout-script.js"></script>
+</body>
+</html>

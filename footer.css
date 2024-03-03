@@ -4,7 +4,7 @@ footer {
   }
 
   footer:hover{
-    transform: scale(1.05);
+    transform: scale(1.0);
   }
 
   figure.profile{
@@ -23,7 +23,7 @@ footer {
     cursor: pointer;
   }
   figure.profile:hover{
-    transform: scale(1.15);
+    transform: scale(1.1);
   }
 
   figure.profile .autor {

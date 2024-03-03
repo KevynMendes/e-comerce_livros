@@ -1,0 +1,248 @@
+@font-face {
+    font-family: 'San Francisco';
+    font-weight: 400;
+    src: url('https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff');
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'San Francisco';
+    list-style-type: none;
+  }
+  :root {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #e9cba5;
+  }
+  
+  body {
+    height: 100dvh;
+  }
+
+#return{
+    font-size: 1.5rem;
+    background-color: transparent;
+     border-radius: 100%;
+     font-weight: bold;
+     margin-top: 0.5rem;
+     margin-left: 0.5rem;
+     border: none;
+     cursor: pointer;
+     transition: transform 0.3s ease;
+    &:hover {
+     transform: scale(1.1 );
+    }
+} 
+
+#carrinho {
+    position: relative;
+    bottom: 3.5rem;
+    left: 0rem;
+    width: 4.5rem;
+    height: 4.5rem;
+}
+
+#resumo{
+    font-size: 2rem;
+    font-weight: 700;
+    background: orangered;
+    color: white;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    border-radius: 1rem;
+    padding: 0.1rem;
+    transition: transform 0.3s ease;
+    &:hover {
+     background-color:orangered;
+     transform: scale(1.1 );
+    }
+}
+
+h1, h2 {
+    color: #000;
+    text-align: center;
+    margin: 0.5rem;
+}
+
+
+ul {
+    list-style: none;
+    padding: 0;
+    font-size: 0.8rem;
+}
+
+li {
+    
+    margin-top: 1rem;
+    margin: 0rem 5rem -2rem 5rem;
+    background: #d9d9d9;
+    border-radius: 10rem;
+    border: solid black 0.01rem;
+    font-weight: 600;
+    width: 40rem;
+    height: 6rem;
+    
+}
+
+label {
+    display: block;
+    margin-bottom: 0.1rem;
+    text-align: center;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="text"],
+input[type="submit"] {
+    width: 50%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    background-color: #dcdcdc;
+    border: 0.01rem solid #000;
+    border-radius: 1rem;
+    display: block;
+    margin: auto;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+#payment-form {
+    margin-top: 1rem;
+    font-weight: 600;
+}
+
+#payment-method label {
+    display: inline-block;
+    margin-bottom: 0.5rem; 
+    text-align: center;
+    
+}
+
+#payment-method {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+#payment-method input[type="radio"] {
+    appearance: none; 
+    -webkit-appearance: none; 
+    -moz-appearance: none; 
+    width: 1.5rem; 
+    height: 1.5rem;
+    border-radius: 50%; 
+    border: 0.125rem solid #121212; 
+    margin-right: 0.8rem; 
+}
+
+#payment-method input[type="radio"]:checked {
+    background-color: green; 
+}
+
+#error-message {
+    color: red;
+    margin-top: 10px;
+}
+
+#finalizar{
+    all: unset;
+    cursor: pointer;
+    width: 100%;
+    height: 2.5rem;
+    margin-top: 1.5rem;
+    margin-bottom: 3rem;
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 500;
+    background-color: green;
+    color: #fff;
+    border-radius: 10rem;
+    padding: 0.4rem;
+    transition: transform 0.3s ease;
+    &:hover {
+     background-color:green;
+     transform: scale(1.1 );
+    }
+}
+
+
+#pix-qr-code{
+    width: 10rem;
+    height: 10rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0.5rem;
+}
+
+#chavePix{
+    text-align: center;
+    padding: 0.5rem;
+    background-color: #dcdcdc;
+    width: 100%;
+    border: solid 0.01rem #000;
+    border-radius: 1rem;
+    
+}
+
+#copiar{
+    background-color: transparent;
+    position: relative;
+    bottom: 1.62rem;
+    display: flex;
+    align-items: center;
+    margin-left: 33rem;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+#pixLogo{
+    width: 1rem;
+    height: 1rem;
+}
+
+/*media queries*/
+
+@media screen and (max-width: 37.5rem) {
+    h1 {
+        font-size: 1.5rem; 
+    }
+
+    li {
+        width: 90%;
+        margin: 0 auto 1rem auto; 
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="text"],
+    input[type="submit"] {
+        width: 90%; 
+    }
+}
+
+@media screen and (max-width: 25rem) {
+    h1 {
+        font-size: 1.2rem; 
+    }
+
+    li {
+        width: 95%; 
+    }
+}
