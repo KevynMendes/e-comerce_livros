@@ -339,52 +339,24 @@ main {
 
 /*media queries*/
 
-
+/* Estilos para telas menores que 768px */
 @media only screen and (max-width: 768px) {
   nav {
-    width: 90%; 
+    display: none;
   }
-
   main {
-    width: 90%; 
+    width: 100%; /* Ajuste a largura do conteúdo principal para ocupar toda a largura */
   }
-
-  #produto {
-    flex-direction: column;
-  }
-
-  #opcoes-produto,
-  #visualizacao {
-    flex-basis: auto; 
-  }
-
-  #imagem-visualizacao {
-    width: 100%; 
-    margin-left: 0; 
-  }
-
-  #visualizacao {
-    margin: 1.5rem 0; 
-  }
-}
-
-
-@media only screen and (max-width: 480px) {
   #opcoes-produto {
-    display: flex; 
-    flex-direction: column; 
-    width: 90%;
-    margin: auto; 
+    display: flex; /* Altere o layout do grid para flex para melhor adaptação em telas menores */
+    flex-direction: column;
+    width: 10%; /* Ajuste a largura dos componentes de opções de produto para ocupar toda a largura */
   }
 
-  #imagem-visualizacao {
-    width: 100%;
+  #botao-duvidas {
+    display: none;
   }
 
-  #infoLivro {
-    font-size: 0.7rem; 
-    margin-left: 0; 
-    text-align: center; 
-  }
 }
+
 

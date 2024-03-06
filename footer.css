@@ -119,3 +119,52 @@ footer {
     transition: transform 0.3s ease; 
     transform: scale(2);
 }
+
+/******* media queries */ 
+
+/* Media queries para dispositivos móveis */
+@media only screen and (max-width: 768px) {
+  footer {
+    font-size: 0.8rem; /* Redução do tamanho da fonte */
+  }
+
+  figure.profile {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; /* Alteração para uma coluna em dispositivos móveis */
+    max-width: 100%; /* Redução da largura máxima */
+    margin-right: -15rem;
+  }
+
+  figure.profile .autor h1 {
+    font-size: 0.5rem; /* Ajuste do tamanho da fonte */
+  }
+
+  figure.profile .autor span {
+    font-size: 0.5rem; /* Ajuste do tamanho da fonte */
+  }
+
+  figure.profile .autor img {
+    width: 2.5rem;
+  height: 2.5rem;
+  }
+  
+  figure.profile blockquote {
+    font-size: 0.7rem; /* Ajuste do tamanho da fonte */
+    max-width: none; /* Remoção da largura máxima */
+    width: 100%;
+  }
+
+  #conteudo-modal {
+    margin: 20% auto; /* Ajuste da margem */
+    padding: 1rem; /* Ajuste do padding */
+    width: 90%; /* Redução da largura */
+  }
+
+  #fechar-modal {
+    font-size: 1.5rem; /* Ajuste do tamanho da fonte */
+  }
+
+  #botao-duvidas {
+    display: none;
+  }
+}
+
