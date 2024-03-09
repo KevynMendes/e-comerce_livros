@@ -12,3 +12,5 @@ Explore nossas ofertas especiais e aproveite descontos exclusivos em pacotes de 
 Além disso, nossos recursos permitem que você ouça ou leia seus livros off-line, garantindo acesso contínuo ao conhecimento, onde quer que esteja. E com conteúdos em Português-BR, você pode mergulhar em uma experiência de leitura envolvente em seu idioma nativo.
 
 Junte-se a nós no "Livros para você" e embarque em uma jornada de descoberta e aprendizado. Comece sua aventura literária hoje mesmo!
+##
+Projeto feito com: HTML, CSS e Java Script.
