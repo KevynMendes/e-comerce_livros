@@ -2,7 +2,6 @@
 
 ![Captura de tela 2024-03-09 175320](https://github.com/KevynMendes/e-comerce_livros/assets/156138743/f033a1d5-5fb2-415b-9ead-88d974a97e90)
 ##
-
 Descubra um mundo de conhecimento e entretenimento com "Livros para você". Nossa plataforma oferece uma ampla seleção de títulos, desde best-sellers até obras clássicas, em formatos digitais que se adaptam ao seu estilo de vida.
 
 Ao navegar pelo "Livros para você", você encontrará uma interface intuitiva e fácil de usar, projetada para ajudá-lo a encontrar os livros perfeitos para sua jornada de leitura. Com opções de áudio-books e e-books, você pode escolher o formato que melhor se adequa às suas preferências.
