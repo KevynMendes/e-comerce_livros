@@ -16,6 +16,10 @@ O "Livros para Você" é um projeto que visa proporcionar acesso a uma vasta sel
 - Acesso off-line para ler ou ouvir livros em qualquer lugar, a qualquer momento.
 - Conteúdo em Português-BR para uma experiência de leitura envolvente.
 
+## Acesse o Site
+
+Para acessar o site, [clique aqui](https://kevynmendes.github.io/e-comerce_livros/).
+
 ## Tecnologias Utilizadas
 
 Este projeto foi desenvolvido utilizando as seguintes tecnologias:
